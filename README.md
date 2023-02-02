@@ -37,3 +37,8 @@ Responsibilities of a store:
 ->  Allows state to be updated via dispatch(action)
 -> Registers listeners via subscribe(listener)
 -> Handles unregistering of listeners via the function returned by the listener
+
+
+
+
+n short the state of the application is maintained in the redux store. The app is subscribed to the store. App can not directly update the state. If the app wants to update the state then it has to dispatch an action. Once the action is dispatched, reducers then handles that and changes the state according to the action type. As soon as the state is updated, value is passed on to the application, because the app is subscribed to the store
